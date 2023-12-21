@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Bài 2: 2*(3+'5')-'2'+20/'5'+('1'+2+6)</h3>
+<br>
+// 2*'35'-'2'+4+'126'
+<br>
+// 70-'2'+4+'126'
+<br>
+// 72+'126'
+<br>
+// '72126'
+<br>
+<h3>Bài 3</h3>
+<br>
+<input type="text" id="name">
+<button onclick="doanCode()">Nham</button>
+<script>
+    function doanCode () {
+    let a = document.getElementById('name').value;
+        document.write(a)
+    }
+</script>
+<br>
+<h3>Bài 4</h3>
+<input type="text" id="s1">
+<input type="text" id="s2">
+<button onclick="sosanh1()">Ok</button>
+<h1 id="kq"></h1>
+<script>
+    function sosanh1 () {
+        let a = document.getElementById('s1').value;
+        let b = document.getElementById('s2').value;
+        if (a > b) {
+            document.getElementById('kq').value = a > b ;
+
+        }
+        else if (a < b) {
+            document.getElementById('kq').value = a < b ;
+
+        }
+    }
+</script>
+<br>
+<h3>Bài 5</h3>
+<input type="text" id="s3">;
+<input type="text" id="s4">;
+<button onclick="doanCode1()">Dien Tich</button>
+<button onclick="doanCode2()">Chu Vi</button>
+<h2 id="kq1"></h2>
+    <script>
+        function doanCode1() {
+            let c = +document.getElementById('s3').value;
+            let d = +document.getElementById('s4').value;
+            let T = (c + d);
+            document.getElementById('kq1').innerHTML = "Dien Tich la: " + c * d;
+
+            function doanCode2() {
+                let c = +document.getElementById('s3').value;
+                let d = +document.getElementById('s4').value;
+                let T = +(c + d);
+                let P = T+T;
+                document.getElementById('kq1').value;
+                document.getElementById('kq1').innerHTML = "Chu vi la: " + T+T;
+            }
+        }
+
+
+    </script>
