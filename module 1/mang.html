@@ -5,100 +5,291 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    // let aa = [1, 'Hello', 'Abc', 1100];
-    // alert(aa[2]);
-    // for (let i = 0; i < aa.length; i++) {
-    //  document.write(aa[i]+'<br>')
-    // }
-    // let arr = [11, 22, 33, 44, 55, 66];
-    // for (let i = 0; i < arr.length; i++) {
-    //     if (arr[i] % 2 == 0) {
-    //         document.write(arr[i] + '<br>')
-    //     }
-    // }
-    // let arr = [11, 22, 33, 44, 12, 23, 35];
-    // let sum = 0;
-    // for (let i = 0; i < arr.length; i++) {
-    //     if (arr[i] % 3 == 0) {
-    //         sum += arr[i]
-    //     }
-    // }alert(sum)
-    // let arr = [11, 22, 33, 44, 12, 23, 34];
-    // let sum = 1;
-    // for (let i = 0; i < arr.length; i++) {
-    //     if (arr[i] % 5 == 0) {
-    //         sum *= arr[i]
-    //     }
-    // }alert(sum)
-    // let dem = 0;
-    // for (let i= 0; i < arr.length; i++) {
-    //     if (arr[i] % 2 == 0 && arr[i] > 30) {
-    //         dem++
-    //     }
-    // }document.write(dem+'<br>')
-    // let arr = [11, 22, 33, 44, 12, 23, 34];
-    // let min = arr[4]
-    // for (let i = 0; i<arr.length; i++) {
-    //     if (min>arr[i]) {
-    //         min=arr[i]
-    //     }
-    // }document.write(min);
-    // let arr = [11, 22, 33, 44, 12, 23, 34];
-    // let min = arr[0]
-    // for (let i = 0; i < arr.length; i++) {
-    //     if (min % 2 != 0 && min % 2 == 0) {
-    //         min = arr[i];
-    //     }
-    //     if (min > arr[i] && arr[i] % 2 == 0) {
-    //         min = arr[i]
-    //     }
-    // }
-    // document.write(min);
-    // let arr = [11, 22, 33, 44, 12, 23, 34];
-    // let max = arr[0];
-    // In ra các phần tử chẵn trong mảng
-    // In ra các phần tử tại vị trí chẵn trong mảng
-    // Tính tổng các phần tử chia hết cho 3 trong mảng
-    // Tính tích các phần tử chia hết cho 5 trong mảng
-    // Đếm số lượng các số chia hết cho 2 và lớn hơn 30
-    // Tìm phần tử có giá trị lớn nhất
-    // Tìm số nhỏ nhất
-    // Tìm số chẵn nhỏ nhất
-    // Nâng Cao: Tìm số lớn thứ 2 trong mảng (Chỉ dùng 1 vòng for)
-    // Nhập vào x, tìm vị trí của x trong mảng. Nếu x có thì in ra vị trí, k có thì in ra -1
-    // let arr = [11, 22, 33, 44, 12, 23, 34];
-    //  for (let i = 0; i < arr.length; i++) {
-    //      if (arr[i] % 2 == 0) {
-    //          document.write(arr[i]+'<br>')
-    //      }
-    //  }
-    // let arr = [11, 22, 33, 44, 12, 23, 34];
-    // for (let i = 0; i < arr.length; i++) {
-    //     if (i % 2 == 0) {
-    //         document.write(arr[i]+'<br>')
-    //     }
-    // }
-    // let arr = [11, 22, 33, 44, 12, 23, 35];
-    // let sum = 0;
-    // for (let i = 0; i < arr.length; i++) {
-    //     if (arr[i] % 3 == 0) {
-    //         sum += arr[i]
-    //     }
-    // }alert(sum)
-    // let arr = [11, 22, 33, 44, 12, 23, 34];
-    // let sum = 1;
-    // for (let i = 0; i < arr.length; i++) {
-    //     if (arr[i] % 5 == 0) {
-    //         sum *= arr[i]
-    //     }
-    // }alert(sum)
-    // let dem = 0;
-    // for (let i= 0; i < arr.length; i++) {
-    //     if (arr[i] % 2 == 0 && arr[i] > 30) {
-    //         dem++
-    //     }
-    // }document.write(dem+'<br>')
-</script>
+
+<!--    // let aa = [1, 'Hello', 'Abc', 1100];-->
+<!--    // alert(aa[2]);-->
+<!--    // for (let i = 0; i < aa.length; i++) {-->
+<!--&lt;!&ndash;    //  document.write(aa[i]+'<br>')&ndash;&gt;-->
+<!--    // }-->
+<!--    // let arr = [11, 22, 33, 44, 55, 66];-->
+<!--    // for (let i = 0; i < arr.length; i++) {-->
+<!--    //     if (arr[i] % 2 == 0) {-->
+<!--&lt;!&ndash;    //         document.write(arr[i] + '<br>')&ndash;&gt;-->
+<!--    //     }-->
+<!--    // }-->
+<!--    // let arr = [11, 22, 33, 44, 12, 23, 35];-->
+<!--    // let sum = 0;-->
+<!--    // for (let i = 0; i < arr.length; i++) {-->
+<!--    //     if (arr[i] % 3 == 0) {-->
+<!--    //         sum += arr[i]-->
+<!--    //     }-->
+<!--    // }alert(sum)-->
+<!--    // let arr = [11, 22, 33, 44, 12, 23, 34];-->
+<!--    // let sum = 1;-->
+<!--    // for (let i = 0; i < arr.length; i++) {-->
+<!--    //     if (arr[i] % 5 == 0) {-->
+<!--    //         sum *= arr[i]-->
+<!--    //     }-->
+<!--    // }alert(sum)-->
+<!--    // let dem = 0;-->
+<!--    // for (let i= 0; i < arr.length; i++) {-->
+<!--    //     if (arr[i] % 2 == 0 && arr[i] > 30) {-->
+<!--    //         dem++-->
+<!--    //     }-->
+<!--&lt;!&ndash;    // }document.write(dem+'<br>')&ndash;&gt;-->
+<!--    // let arr = [11, 22, 33, 44, 12, 23, 34];-->
+<!--    // let min = arr[4]-->
+<!--&lt;!&ndash;    // for (let i = 0; i<arr.length; i++) {&ndash;&gt;-->
+<!--    //     if (min>arr[i]) {-->
+<!--    //         min=arr[i]-->
+<!--    //     }-->
+<!--    // }document.write(min);-->
+<!--    // let arr = [11, 22, 33, 44, 12, 23, 34];-->
+<!--    // let min = arr[0]-->
+<!--    // for (let i = 0; i < arr.length; i++) {-->
+<!--    //     if (min % 2 != 0 && min % 2 == 0) {-->
+<!--    //         min = arr[i];-->
+<!--    //     }-->
+<!--    //     if (min > arr[i] && arr[i] % 2 == 0) {-->
+<!--    //         min = arr[i]-->
+<!--    //     }-->
+<!--    // }-->
+<!--    // document.write(min);-->
+<!--    // let arr = [11, 22, 33, 44, 12, 23, 34];-->
+<!--    // let max = arr[0];-->
+<!--    // In ra các phần tử chẵn trong mảng-->
+<!--    // In ra các phần tử tại vị trí chẵn trong mảng-->
+<!--    // Tính tổng các phần tử chia hết cho 3 trong mảng-->
+<!--    // Tính tích các phần tử chia hết cho 5 trong mảng-->
+<!--    // Đếm số lượng các số chia hết cho 2 và lớn hơn 30-->
+<!--    // Tìm phần tử có giá trị lớn nhất-->
+<!--    // Tìm số nhỏ nhất-->
+<!--    // Tìm số chẵn nhỏ nhất-->
+<!--    // Nâng Cao: Tìm số lớn thứ 2 trong mảng (Chỉ dùng 1 vòng for)-->
+<!--    // Nhập vào x, tìm vị trí của x trong mảng. Nếu x có thì in ra vị trí, k có thì in ra -1-->
+<!--    // let arr = [11, 22, 33, 44, 12, 23, 34];-->
+<!--    //  for (let i = 0; i < arr.length; i++) {-->
+<!--    //      if (arr[i] % 2 == 0) {-->
+<!--    //          document.write(arr[i]+'<br>')-->
+<!--    //      }-->
+<!--    //  }-->
+<!--    // let arr = [11, 22, 33, 44, 12, 23, 34];-->
+<!--    // for (let i = 0; i < arr.length; i++) {-->
+<!--    //     if (i % 2 == 0) {-->
+<!--    //         document.write(arr[i]+'<br>')-->
+<!--    //     }-->
+<!--    // }-->
+<!--    // let arr = [11, 22, 33, 44, 12, 23, 35];-->
+<!--    // let sum = 0;-->
+<!--    // for (let i = 0; i < arr.length; i++) {-->
+<!--    //     if (arr[i] % 3 == 0) {-->
+<!--    //         sum += arr[i]-->
+<!--    //     }-->
+<!--    // }alert(sum)-->
+<!--    // let arr = [11, 22, 33, 44, 12, 23, 34];-->
+<!--    // let sum = 1;-->
+<!--    // for (let i = 0; i < arr.length; i++) {-->
+<!--    //     if (arr[i] % 5 == 0) {-->
+<!--    //         sum *= arr[i]-->
+<!--    //     }-->
+<!--    // }alert(sum)-->
+<!--    // let dem = 0;-->
+<!--    // for (let i= 0; i < arr.length; i++) {-->
+<!--    //     if (arr[i] % 2 == 0 && arr[i] > 30) {-->
+<!--    //         dem++-->
+<!--    //     }-->
+<!--    // }document.write(dem+'<br>')-->
+<!--    // let a = +prompt('nhap so a')-->
+<!--    // let b = +prompt('nhap so b')-->
+<!--    // if (a > b) {-->
+<!--    //     alert('ok')-->
+<!--    // }-->
+<!--    // let arr = [11, 22, 33, 44, 12, 23, 34];-->
+<!--    // let dem = 0;-->
+<!--    // for (let i = 0; i <arr.length; i++) {-->
+<!--    //     if (arr[i] % 2 == 0) {-->
+<!--    //         dem = +arr[i]-->
+<!--    //     }-->
+<!--    // }-->
+<!--    // let arr = [[1,2,3,4,5],[6,7,8],[9,10,11,12,13]]-->
+<!--    // let x = +prompt('Nhap vao x');-->
+<!--    // for (let i = 0; i < arr.length; i++) {-->
+<!--    //     for (let j = 0; j < arr[i].length; j++) {-->
+<!--    //        if (arr[i][j] == x ) {-->
+<!--    //            document.write([i]+ "" +[j])-->
+<!--    //        }-->
+<!--    //     }-->
+<!--    // }-->
+<!--    // let arr = [-->
+<!--    //     [11,12,13,14],//03-->
+<!--    //     [23,22,25,26],//12-->
+<!--    //     [16,27,34,41],//21-->
+<!--    //     [55,62,76,81] //30-->
+<!--    // ]-->
+<!--    // let sum = 0;-->
+<!--    // for (let i = 0; i < arr.length; i++) {-->
+<!--    //     sum += arr[i][i]-->
+<!--    // }document.write(sum)-->
+<!--    // let arr = [-->
+<!--    //     [11,12,13,14],//03-->
+<!--    //     [23,22,25,26],//12-->
+<!--    //     [16,27,34,41],//21-->
+<!--    //     [55,62,76,81] //30-->
+<!--    // ]-->
+<!--    // let sum = 0;-->
+<!--    // for (let i = 0; i < arr.length; i++) {-->
+<!--    //     sum += arr[i][arr.length -1 -i]-->
+<!--    // }document.write(sum)-->
+<!--    //-->
+<!--    // let arr = [22,33,44,55,66]-->
+<!--    // // arr.push(1)-->
+<!--    // // alert(arr)-->
+<!--    // // arr.indexOf(33)-->
+<!--    // // alert(arr)-->
+<!--    // arr.splice(1,1);-->
+<!--    // alert(arr)-->
+<!--    //     let arr = []-->
+<!--    // while (true) {-->
+<!--    //         let x = +prompt('Nhap vao x')-->
+<!--    //         if (x === 0) {-->
+<!--    //             break;-->
+<!--    //         }-->
+<!--    //         arr.push(x)-->
+<!--    // }alert(arr)-->
+<!--    // let arr = [[]]-->
+<!--    // let a = +prompt('nhap a')-->
+<!--    // let b = +prompt('nhap b')-->
+<!--    // while (true) {-->
+<!--    //     let x = +prompt('Nhap vao x')-->
+<!--    //     if (x === 0 ) {-->
+<!--    //         break;-->
+<!--    //     }-->
+<!--    //     arr.push(x)-->
+<!--    // }alert(arr)-->
+<!--    // for (let i = 0; i< arr.length; i++) {-->
+<!--    //     for (let j = 0; j < arr[i].length; j++)-->
+<!--    //-->
+<!--    // }alert(arr)-->
+
+<!--    // cách khai báo biến-->
+<!--    // có mấy kiểu dữ liệu-->
+<!--    // làm sao để quy định kiểu dữ liệu cho 1 biến-->
+<!--    // có những cách nào để hiển thị chữ hello ra-->
+<!--    // có những cách nào để nhập vào biến a-->
+<!--    // in ra thẻ h1, img, a với JS-->
+<!--    // Nhập vào tên, in ra tên-->
+<!--    // Nhập vào a, in ra bình phương của a-->
+<!--    // Nhập vào tên, in ra tên với h1-->
+<!--    // Nhập vào đường dẫn cho biến src, in ra ảnh với nguồn ảnh là biến src-->
+<!--    //-->
+<!--    // Nhập vào tuổi trong biến age, in ra 'Đủ tuổi' nếu age>18-->
+<!--    // Nhập và a, in ra 'Hello' nếu a chẵn, 'Hi' nếu a lẻ-->
+<!--    //-->
+<!--    // Nhập vào a, b. Nếu a>b in ra tổng, nếu a<b in ra tích, nếu a = b in ra 'Hihi'-->
+<!--    // Nhập a,b,c. In ra số lớn nhất-->
+<!--    //-->
+<!--    // In ra 100 chữ 'Hello'-->
+<!--    // Nhập vào N từ prompt. In ra N lần chữ 'Hello'-->
+<!--    // In ra cac số từ a đến b, mỗi số trong 1 thẻ <h1>;-->
+<!--    // In ra các phần số chẵn trong h2, le trong h1;-->
+<!--    // Đếm có  bao nhiêu phần tử chia 5 dư 2 trong mảng-->
+<!--    // Nhap vào a, đếm số lượng a trong mảng.-->
+
+
+
+
+<!--Khai báo biến ; let,var,const-->
+<!--Có byte, char, short, int, long, float, double và boolean-->
+<!--làm sao để quy định kiểu dữ liệu cho 1 biến-->
+<!--sử dụng typescript-->
+<!--cách hiện chữ ‘hello’; alearl, document.ElemenById, document.write-->
+<!--<h1>alo</h1>-->
+<!--<img src="link ảnh" alt="">-->
+<!--<script>-->
+<!--    let a = +prompt('Nhap a')-->
+<!--    document.write(a)-->
+<!--</script>-->
+<!--<script>-->
+<!--    var Name = prompt('Nhap ten')-->
+<!--    document.write('<p>Tên của bạn là: ' + Name + '</p>');-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a = +prompt('Nhap vao a');-->
+<!--    alert(a*a)-->
+<!--</script>-->
+<!--<script>-->
+<!--    var Name = prompt('Nhap ten')-->
+<!--    document.write('<h1>Tên của bạn là: ' + Name + '</h1>');-->
+<!--</script>-->
+<!--<script>-->
+<!--    let age = +prompt('nhap so tuoi');-->
+<!--    if (age > 18) {-->
+<!--        alert('dutuoi')-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a = +prompt('Nhap a');-->
+<!--    if (a % 2 ==0) {-->
+<!--        alert('hello')-->
+<!--    }-->
+<!--    if (a % 2 != 0) {-->
+<!--        alert('hi')-->
+<!--    }-->
+<!--</script>-->
+
+
+
+<!--// Nhập vào a, b. Nếu a>b in ra tổng, nếu a<b in ra tích, nếu a = b in ra 'Hihi'&ndash;&gt;-->
+<!--    // Nhập a,b,c. In ra số lớn nhất-->
+<!--    //-->
+<!--    // In ra 100 chữ 'Hello'-->
+<!--    // Nhập vào N từ prompt. In ra N lần chữ 'Hello'-->
+<!--    // In ra cac số từ a đến b, mỗi số trong 1 thẻ <h1>;-->
+<!--    // In ra các phần số chẵn trong h2, le trong h1;-->
+<!--    // Đếm có  bao nhiêu phần tử chia 5 dư 2 trong mảng-->
+<!--    // Nhap vào a, đếm số lượng a trong mảng.-->
+<!--<script>-->
+<!--    let a = +prompt('nhap a');-->
+<!--    let b = +prompt('nhap b');-->
+<!--    if (a > b) {-->
+<!--        alert(a+b);-->
+<!--    }-->
+<!--    if (a < b) {-->
+<!--        alert(a*b);-->
+<!--    }-->
+<!--    if (a == b) {-->
+<!--        alert('hihi')-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a = +prompt('Nhap a');-->
+<!--    let b = +prompt('Nhap b');-->
+<!--    let c = +prompt('Nhap c');-->
+<!--   if (a > b && a > c) {-->
+<!--       alert('a lon nhat')-->
+<!--   }-->
+<!--    if (c > b && c > a) {-->
+<!--        alert('c lon nhat')-->
+<!--    }-->
+<!--    if (b > a && b > c) {-->
+<!--        alert('a lon nhat')-->
+<!--    }-->
+
+<!--</script>-->
+<!--<script>-->
+<!--    let solan = 0;-->
+<!--    while (solan<=100) {-->
+<!--        document.write('Hello<br>')-->
+<!--        solan = solan + 1-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let n = +prompt('Nhap so lan');-->
+<!--    while (sl <= n) {-->
+<!--        document.write('hello<br>')-->
+<!--        sl == n-->
+<!--    }-->
+
+<!--</script>-->
 </body>
 </html>
