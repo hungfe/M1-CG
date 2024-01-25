@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bai 3-->
+<!--<script>-->
+<!--    function a(num) {-->
+<!--        if (num < 2) {-->
+<!--            return false;-->
+<!--        }-->
+<!--        for (let i = 2; i <= Math.sqrt(num); i++) {-->
+<!--            if (num % i === 0) {-->
+<!--                return false;-->
+<!--            }-->
+<!--        }-->
+<!--        return true;-->
+<!--    }-->
+<!--    function b(x) {-->
+<!--        let sum = 0;-->
+<!--        for (let i = 0; i <= x; i++) {-->
+<!--            if (a(i)) {-->
+<!--                sum += i;-->
+<!--            }-->
+<!--        }-->
+<!--        return sum;-->
+<!--    }-->
+<!--    let x = 10;-->
+<!--    let sugar = b(x);-->
+<!--    document.getElementById("Tổng các số nguyên tố từ 0 đến " + x + " là: " + sugar);-->
+<!--</script>-->
+<!--Bài 2-->
+<!--<script>-->
+<!--    function insertNumberToArray(arr, x, index) {-->
+<!--        if (index < 0 || index > arr.length) {-->
+<!--            return arr; -->
+<!--        }-->
+<!--        let newArray = arr.slice(0);-->
+<!--        newArray.splice(index, 0, x);-->
+<!--        return newArray;-->
+<!--    }-->
+<!--    let array = [1, 2, 3, 4, 5];-->
+<!--    let numberToAdd = 10;-->
+<!--    let insertionIndex = 2;-->
+
+<!--    let resultArray = insertNumberToArray(array, numberToAdd, insertionIndex);-->
+<!--    console.log("Mảng mới sau khi thêm số " + numberToAdd + " vào vị trí " + insertionIndex + " là: ", resultArray);-->
+<!--</script>-->
+<!--bài 4-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Rectangle Rendering</title>-->
+<!--    <style>-->
+<!--        canvas {-->
+<!--            border: 1px solid #000;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<canvas id="myCanvas" width="400" height="200"></canvas>-->
+
+<!--<script>-->
+<!--    // Định nghĩa lớp hình chữ nhật-->
+<!--    class Rectangle {-->
+<!--        constructor(x, y, width, height, color) {-->
+<!--            this.x = x;-->
+<!--            this.y = y;-->
+<!--            this.width = width;-->
+<!--            this.height = height;-->
+<!--            this.color = color;-->
+<!--        }-->
+
+<!--        render(canvas) {-->
+<!--            const ctx = canvas.getContext("2d");-->
+<!--            ctx.fillStyle = this.color;-->
+<!--            ctx.fillRect(this.x, this.y, this.width, this.height);-->
+<!--        }-->
+<!--    }-->
+
+<!--    // Tạo đối tượng Rectangle-->
+<!--    const myRectangle = new Rectangle(50, 50, 100, 70, "#00FF00"); // Ví dụ: Hình chữ nhật x = 50, y = 50, chiều dài = 100, chiều rộng = 70, màu sắc = xanh lá cây-->
+
+<!--    // Vẽ hình chữ nhật lên canvas-->
+<!--    const canvas = document.getElementById("myCanvas");-->
+<!--    myRectangle.render(canvas);-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+<!--bai 1-->
+<!--<script>-->
+<!--    function findThirdHighestScore(scores) {-->
+<!--    let uniqueSortedScores = [...new Set(scores)].sort((a, b) => b - a);-->
+<!--    if (uniqueSortedScores.length >= 3) {-->
+<!--    return uniqueSortedScores[2]; // Trả về điểm thi cao thứ 3-->
+<!--    } else {-->
+<!--    return "Không có đủ điểm để xác định điểm thi cao thứ 3.";-->
+<!--    }-->
+<!--    }-->
+<!--    let examScores = [85, 90, 92, 88, 85, 95, 90, 92, 80];-->
+<!--    let thirdHighestScore = findThirdHighestScore(examScores);-->
+<!--    console.log("Điểm thi cao thứ 3 là: " + thirdHighestScore);-->
+<!--</script>-->
+</body>
+</html>
